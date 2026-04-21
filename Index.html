@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Asanda Kumbaca</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div id="app">
+
+  <!-- NAV -->
+  <header>
+    <div class="nav-wrap">
+      <nav class="navbar">
+        <a class="logo">
+          <img src="assets/images/logo.svg" alt="">
+        </a>
+
+        <div>
+          <router-link to="/">Home</router-link>
+          <router-link to="/services">Services</router-link>
+          <router-link to="/portfolio">Portfolio</router-link>
+          <router-link to="/brief">Brief</router-link>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- THIS is where pages render -->
+  <router-view></router-view>
+
+</div>
+
+<!-- Vue -->
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+<!-- Router (NEW) -->
+<script src="https://unpkg.com/vue-router@4"></script>
+
+<!-- Your JS -->
+<script src="script.js"></script>
+
+</body>
